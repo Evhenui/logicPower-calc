@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-  <HelloWorld/>
+  <Calc/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld  from './components/HelloWorld.vue'
+import Calc  from './components/Calc.vue'
 
 @Component({
   components: {
-    HelloWorld
+    Calc
   },
 })
 export default class App extends Vue {}
