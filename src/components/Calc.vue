@@ -1,9 +1,9 @@
 <template>
-  <div class="clac">
-      <div class="clac__wrapper">
+  <div class="calc">
+      <div class="calc__wrapper">
 
-        <div class="clac__header">
-          <p class="clac__main-description">С помощью данного калькулятора можно ориентировочно рассчитать необходимую ёмкость аккумулятора для источника бесперебойного питания.</p>        
+        <div class="calc__header">
+          <p class="calc__main-description">С помощью данного калькулятора можно ориентировочно рассчитать необходимую ёмкость аккумулятора для источника бесперебойного питания.</p>        
         </div>
 
         <section class="calc__source-power">
@@ -13,66 +13,101 @@
           </section>
 
           <section class="calc__source-power-body">
-            <form action="">
+            <form class="calc__source-form" action="">
               <section class="calc__source-power-select">
-                <div class="checkbox">
-                  <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
-                  <label for="color-1">ИБП линейно интерактивные</label>
+                <div class="calc__checkbox">
+                  <input class="calc__custom-checkbox" type="checkbox" id="line-interactive" name="line-interactive" value="ok">
+                  <label class="calc__checkbox-label" for="line-interactive">ИБП линейно интерактивные</label>
                   <div class="calc__checkbox-help">
-                    <img src="../assets/icons/help-link.png" alt="help" width="16" height="16">
+                      <img src="../assets/icons/help-link.png" alt="help" width="16" height="16">
                     <div class="calc__help-section">
-                      <p class="calc__help-description">Обеспечивают кратковременное резервное питание оборудования, и выполняет функции стабилизатора напряжения в сети.</p>
+                      <div class="calc__help-section-arrow">
+                        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M-4.37114e-07 9L15 0.339744L15 17.6603L-4.37114e-07 9Z" fill="#F3F3F3"/>
+                        </svg>
+                      </div>
+                      <div class="calc__help-section-wrapper">
+                        <p class="calc__help-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>    
+                      </div>                     
                     </div>
                   </div>
                 </div>
     
-                <div class="checkbox">
-                  <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
-                  <label for="color-1">ИБП с правильной синусоидой</label>
+                <div class="calc__checkbox">
+                  <input class="calc__custom-checkbox" type="checkbox" id="regular-sinusoid" name="regular-sinusoid" value="ok">
+                  <label class="calc__checkbox-label" for="regular-sinusoid">ИБП с правильной синусоидой</label>
                   <div class="calc__checkbox-help">
-                    <img src="../assets/icons/help-link.png" alt="help" width="16" height="16">
+                      <img src="../assets/icons/help-link.png" alt="help" width="16" height="16">
                     <div class="calc__help-section">
-                      <p class="calc__help-description">Обеспечивают кратковременное резервное питание оборудования, и выполняет функции стабилизатора напряжения в сети.</p>
+                      <div class="calc__help-section-arrow">
+                        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M-4.37114e-07 9L15 0.339744L15 17.6603L-4.37114e-07 9Z" fill="#F3F3F3"/>
+                        </svg>
+                      </div>
+                      <div class="calc__help-section-wrapper">
+                        <p class="calc__help-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>    
+                      </div>                     
                     </div>
                   </div>
                 </div>
     
-                <div class="checkbox">
-                  <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
-                  <label for="color-1">Smart ИБП Online</label>
+                <div class="calc__checkbox">
+                  <input class="calc__custom-checkbox" type="checkbox" id="smart" name="smart" value="ok">
+                  <label class="calc__checkbox-label" for="smart">Smart ИБП Online</label>
                   <div class="calc__checkbox-help">
-                    <img src="../assets/icons/help-link.png" alt="help" width="16" height="16">
+                      <img src="../assets/icons/help-link.png" alt="help" width="16" height="16">
                     <div class="calc__help-section">
-                      <p class="calc__help-description">Обеспечивают кратковременное резервное питание оборудования, и выполняет функции стабилизатора напряжения в сети.</p>
+                      <div class="calc__help-section-arrow">
+                        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M-4.37114e-07 9L15 0.339744L15 17.6603L-4.37114e-07 9Z" fill="#F3F3F3"/>
+                        </svg>
+                      </div>
+                      <div class="calc__help-section-wrapper">
+                        <p class="calc__help-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>    
+                      </div>                     
                     </div>
                   </div>
                 </div>
     
-                <div class="checkbox">
-                  <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
-                  <label for="color-1">ИБП гибридный MPPT с правильной синусоидой</label>
+                <div class="calc__checkbox">
+                  <input class="calc__custom-checkbox" type="checkbox" id="hybrid" name="hybrid" value="ok">
+                  <label class="calc__checkbox-label" for="hybrid">ИБП гибридный MPPT с правильной синусоидой</label>
                   <div class="calc__checkbox-help">
-                    <img src="../assets/icons/help-link.png" alt="help" width="16" height="16">
+                      <img src="../assets/icons/help-link.png" alt="help" width="16" height="16">
                     <div class="calc__help-section">
-                      <p class="calc__help-description">Обеспечивают кратковременное резервное питание оборудования, и выполняет функции стабилизатора напряжения в сети.</p>
+                      <div class="calc__help-section-arrow">
+                        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M-4.37114e-07 9L15 0.339744L15 17.6603L-4.37114e-07 9Z" fill="#F3F3F3"/>
+                        </svg>
+                      </div>
+                      <div class="calc__help-section-wrapper">
+                        <p class="calc__help-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>    
+                      </div>                     
                     </div>
                   </div>
                 </div>
     
-                <div class="checkbox">
-                  <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
-                  <label for="color-1">ИБП MPPT с правильной синусоидой</label>
+                <div class="calc__checkbox">
+                  <input class="calc__custom-checkbox" type="checkbox" id="mppt" name="mppt" value="ok">
+                  <label class="calc__checkbox-label" for="mppt">ИБП MPPT с правильной синусоидой</label>
                   <div class="calc__checkbox-help">
-                    <img src="../assets/icons/help-link.png" alt="help" width="16" height="16">
+                      <img src="../assets/icons/help-link.png" alt="help" width="16" height="16">
                     <div class="calc__help-section">
-                      <p class="calc__help-description">Обеспечивают кратковременное резервное питание оборудования, и выполняет функции стабилизатора напряжения в сети.</p>
+                      <div class="calc__help-section-arrow">
+                        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M-4.37114e-07 9L15 0.339744L15 17.6603L-4.37114e-07 9Z" fill="#F3F3F3"/>
+                        </svg>
+                      </div>
+                      <div class="calc__help-section-wrapper">
+                        <p class="calc__help-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>    
+                      </div>                     
                     </div>
                   </div>
                 </div>
     
-                <div class="checkbox">
-                  <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
-                  <label for="color-1">Выбрать все</label>
+                <div class="calc__checkbox">
+                  <input class="calc__custom-checkbox" type="checkbox" id="all" name="all" value="ok">
+                  <label class="calc__checkbox-label" for="all">Выбрать все</label>
                 </div>
               </section>
               
@@ -83,8 +118,10 @@
                   <div class="calc__data-input-wrapper">
                     <input class="calc__data-input" type="number" name="" id="w">
                     <span class="calc__data-input-units">W</span>
+                    <div class="calc__input-error">
+                      <span class="calc__error">Ошибка: данные некорректны</span>
+                    </div>
                   </div>
-                  <button class="calc__button-orange">Рассчитать</button>
                 </div>
 
                 <div class="calc__data-input-section">
@@ -94,22 +131,30 @@
                     <div class="calc__data-input-wrapper">
                       <input class="calc__data-input" type="number" name="" id="w2">
                       <span class="calc__data-input-units">W</span>
+                      <div class="calc__input-error">
+                        <span class="calc__error">Ошибка: данные некорректны</span>
+                      </div>
                     </div>
 
                     <div class="calc__data-input-wrapper">
                       <input class="calc__data-input" type="number" name="" id="va">
                       <span class="calc__data-input-units">VA</span>
+                      <div class="calc__input-error">
+                        <span class="calc__error">Ошибка: данные некорректны</span>
+                      </div>
                     </div>
 
                   </div>
                   
-                  <button class="calc__button-orange">Рассчитать</button>
+                  
                 </div>
+
+                <button class="calc__button-orange">Рассчитать</button>
 
               </section>
             </form>
             <section class="calc__recommended">
-              <h3 class="calc__subtitle">Рекомендуемые ИБП:</h3>
+              <h3 class="calc__subtitle orande-title">Рекомендуемые ИБП:</h3>
               <section class="calc__recommended-items">
 
               </section>
@@ -138,7 +183,7 @@
 
             <form action="">
 
-              <section class="clac__inputs-wrapper">
+              <section class="calc__inputs-wrapper">
 
                 <div class="calc__data-input-section">
                   <div class="calc__input-help">
@@ -154,6 +199,9 @@
                   <div class="calc__data-input-wrapper">
                     <input class="calc__data-input" type="number" name="" id="w">
                     <span class="calc__data-input-units">W</span>
+                      <div class="calc__input-error">
+                        <span class="calc__error">Ошибка: данные некорректны</span>
+                      </div>
                   </div>
                 </div>
                 
@@ -177,6 +225,9 @@
                   <div class="calc__data-input-wrapper">
                     <input class="calc__data-input" type="number" name="" id="w">
                     <span class="calc__data-input-units">W</span>
+                      <div class="calc__input-error">
+                        <span class="calc__error">Ошибка: данные некорректны</span>
+                      </div>
                   </div>
                 </div>
   
@@ -188,6 +239,9 @@
                   <div class="calc__data-input-wrapper">
                     <input class="calc__data-input" type="number" name="" id="time">
                     <span class="calc__data-input-units">часов</span>
+                      <div class="calc__input-error">
+                        <span class="calc__error">Ошибка: данные некорректны</span>
+                      </div>
                   </div>
                 </div>
 
@@ -196,6 +250,9 @@
                   <div class="calc__data-input-wrapper">
                     <input class="calc__data-input" type="number" name="" id="v">
                     <span class="calc__data-input-units">V</span>
+                      <div class="calc__input-error">
+                        <span class="calc__error">Ошибка: данные некорректны</span>
+                      </div>
                   </div>
                 </div>
 
@@ -208,6 +265,9 @@
                 <div class="calc__data-input-wrapper">
                   <input class="calc__data-input" type="number" name="" id="ah">
                   <span class="calc__data-input-units">Ah</span>
+                   <div class="calc__input-error">
+                      <span class="calc__error">Ошибка: данные некорректны</span>
+                    </div>
                 </div>
               </div>
 
@@ -242,7 +302,7 @@
 
             <form action="">
 
-              <section class="clac__inputs-wrapper">
+              <section class="calc__inputs-wrapper">
 
                 <div class="calc__data-input-section">
                   <div class="calc__input-help">
@@ -258,6 +318,9 @@
                   <div class="calc__data-input-wrapper">
                     <input class="calc__data-input" type="number" name="" id="w">
                     <span class="calc__data-input-units">W</span>
+                      <div class="calc__input-error">
+                        <span class="calc__error">Ошибка: данные некорректны</span>
+                      </div>
                   </div>
                 </div>
                 
@@ -281,6 +344,9 @@
                   <div class="calc__data-input-wrapper">
                     <input class="calc__data-input" type="number" name="" id="w">
                     <span class="calc__data-input-units">W</span>
+                      <div class="calc__input-error">
+                        <span class="calc__error">Ошибка: данные некорректны</span>
+                      </div>
                   </div>
                 </div>
   
@@ -292,6 +358,9 @@
                   <div class="calc__data-input-wrapper">
                     <input class="calc__data-input" type="number" name="" id="v">
                     <span class="calc__data-input-units">V</span>
+                      <div class="calc__input-error">
+                        <span class="calc__error">Ошибка: данные некорректны</span>
+                      </div>
                   </div>
                 </div>
 
@@ -300,6 +369,9 @@
                   <div class="calc__data-input-wrapper">
                     <input class="calc__data-input" type="number" name="" id="ah">
                     <span class="calc__data-input-units">ah</span>
+                      <div class="calc__input-error">
+                        <span class="calc__error">Ошибка: данные некорректны</span>
+                      </div>
                   </div>
                 </div>
 
@@ -312,6 +384,9 @@
                 <div class="calc__data-input-wrapper">
                   <input class="calc__data-input" type="number" name="" id="time">
                   <span class="calc__data-input-units">часов</span>
+                   <div class="calc__input-error">
+                      <span class="calc__error">Ошибка: данные некорректны</span>
+                    </div>
                 </div>
               </div>
 
@@ -410,54 +485,33 @@ export default class Calc extends Vue {
 </script>
 
 <style lang="scss">
-@import '../_shared/assets/scss/abstract/mixin';
-.clac {
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
+@import './../assets/scss/style.scss';
+.calc {
+   &__wrapper {
+    padding-top: 64px;
+    @include width-pad-main();
+    margin: 0 auto;
+  }
+
   &__header {
-    margin-bottom: 40px;
-  }
-
-  &__header-wrapper {
-    position: relative;
-    background-image: url('../assets/img/Banner-Blog.jpg');
-    background-repeat: no-repeat;
-    background-position: right top;
-  }
-
-  &__header-title-wrapper {
-    position: absolute;
-    top: 197px;
-    left: 185px;
-  }
-
-  &__header-title {
-   @include font($font-size: 48, $line-height: 52, $weight: 700);
-   max-width: 550px;
-   width: 100%;
-   color: var(--color-ink-lighter);
-  }
-
-  &__main-information {
-  }
-
-  &__main-information-wrapper {
+    padding: 32px 0;
+    background: var(--color-blue-white);
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    margin-bottom: 64px;
   }
 
   &__main-description {
-   margin: 0 auto 40px auto;
-   @include font($font-size: 18, $line-height: 24, $weight: 400);
-   text-align: center;
-   max-width: 1116px;
-   width: 100%;
-   color: var(--color-ink-base);
+    @include font($font-size: 20, $line-height: 24, $weight: 600);
+    text-align: center;
+    color: var(--color-ink-base);
+    max-width: 805px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   &__inputs-wrapper {
   }
-}
-.calc {
 
   &__source-power {
   }
@@ -466,51 +520,272 @@ export default class Calc extends Vue {
   }
 
   &__source-power-header-title {
+     text-align: center;
+     @include font($font-size: 20, $line-height: 24, $weight: 600);
+     text-transform: uppercase;
+     color: #2B2B2B;
+     margin-bottom: 48px;
   }
 
-  &__button-orange {
+  &__source-form {
+    @include flex-container($direction: row, $spacing: space-between, $alignment: null);
+  }
+
+  &__checkbox {
+    @include flex-container($direction: row, $spacing: null, $alignment: center);
+    column-gap: 16px;
+  }
+
+  &__custom-checkbox {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+  }
+
+  &__checkbox-label {
+      @include font($font-size: 16, $line-height: 24, $weight: 400);
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+      position: relative;
+      &::before {
+        transition: all .1s ease-in-out;
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #CDCFD0;
+        border-radius: 50%;
+        margin-right: 16px;
+      }
+      &::after {
+        transition: all .1s ease-in-out;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #FFFFFF;
+      }
+
+  }
+
+  &__custom-checkbox:not(:disabled):not(:checked) + &__checkbox-label:hover::before {
+      border-color: #E05507;
+    }
+
+  &__custom-checkbox:checked + &__checkbox-label::before {
+      border-color:#F36C21;
+      background-color: #F36C21;
+    }
+
+  &__custom-checkbox:disabled + &__checkbox-label::before {
+      background-color: #e9ecef;
+    }
+
+  &__custom-checkbox {
+
   }
 
   &__source-power-body {
+    border-bottom: 1px solid #8A8A8A;
+    padding-bottom: 48px;
+  }
+
+  &__source-power-select {
+    @include flex-container($direction: column, $spacing: null, $alignment: null);
+    row-gap: 24px;
   }
 
   &__checkbox-help {
+   position: relative;
+   cursor: pointer;
+  }
+  &__checkbox-help:hover &__help-section {
+    opacity: 1;
+    z-index: 1;
+    
   }
 
   &__help-section {
+     top: -20px;
+     left: 23px;
+     opacity: 0;
+     z-index: -1;
+     position: absolute;
+     transition: all .2s ease-in-out; 
+     @include flex-container($direction: row, $spacing: null, $alignment: center);
+  }
+
+  &__help-section-wrapper {
+     background: #F3F3F3;
+     border-radius: 8px;
+     padding: 8px;
+     width: 267px;
   }
 
   &__help-description {
+    
+    @include font($font-size: 12, $line-height: 16, $weight: 400);
+    color: #2B2B2B;
+  }
+
+  &__source-power-inputs-enter {
+    @include flex-container($direction: column, $spacing: null, $alignment: left);
+    row-gap: 56px;
+    max-width: 678px;
+    width: 100%;
   }
 
   &__data-input-section {
   }
 
   &__subtitle {
+    @include font($font-size: 20, $line-height: 28, $weight: 400);
+    color: #2B2B2B;
+    margin-bottom: 24px;
+    &.orande-title {
+      @include font($font-size: 20, $line-height: 30, $weight: 600);
+      text-transform: uppercase;
+      color: #F36C21;
+      margin-bottom: 48px;
+    }
   }
 
   &__data-input-wrapper {
+    position: relative;
+    max-width: 327px;
+    width: 100%;
   }
 
   &__data-input {
+    @include font($font-size: 16, $line-height: 16, $weight: 400);
+    color: #2B2B2B;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    width: 100%;
+    padding: 16px;
+    height: 48px;
+    transition: all .1s ease-in-out;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+    &:focus {
+      border-color: #8A8A8A;
+    }
+    &:disabled {
+      border-color: #E9E9E9;
+      color: #B4B6B8;
+    }
+  }
+
+  &__input-error {
+    transition: all .1s ease-in-out;
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+    padding-top: 8px;
+    opacity: 0;
+  }
+
+  &__data-input-wrapper.active &__input-error {
+    opacity: 1;
+  }
+
+  &__data-input-wrapper.active &__data-input {
+    border-color: #EB1717;
+  }
+
+  &__data-input-wrapper.active &__data-input-units {
+    border-color: #EB1717;
+  }
+
+  &__error {
+    @include font($font-size: 12, $line-height: 16, $weight: 400);
+    color: #EB1717;
   }
 
   &__data-input-units {
+    transition: all .1s ease-in-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include flex-container($direction: row, $spacing: center, $alignment: center);
+    width: 87px;
+    height: 48px;
+    background: #F3F3F3;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    @include font($font-size: 16, $line-height: 16, $weight: 400);
+    color: #2B2B2B;
+    &.focus {
+      border-color: #8A8A8A;
+    }
+    &.disabled {
+      border-color: #F3F3F3;
+      color: #8A8A8A;
+
+    }
+  }
+
+  &__button-orange {
+    transition: all .1s ease-in-out;
+    max-width: 150px;
+    width: 100%;
+    @include font($font-size: 18, $line-height: 24, $weight: 400);
+    color:#FFFFFF;
+    background: #F36C21;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 6px;
+    &:hover {
+      background: #FF5B00;
+    }
+    &:active {
+      background: #AC450B;
+    }
+    &:disabled {
+      background: #8A8A8A;
+    }
   }
 
   &__data-input-general-wrapper {
+    @include flex-container($direction: row, $spacing: null, $alignment: left);
+    column-gap: 24px;
   }
 
   &__recommended {
+    text-align: center;
   }
 
   &__recommended-items {
+
   }
 
   &__button-catalog {
+    padding: 14.5px 0;
+    max-width: 230px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.2);
+    border-radius: 36px;
+    margin: 0 auto;
+    @include flex-container($direction: row, $spacing: center, $alignment: center);
+    column-gap: 16px;
   }
 
   &__button-catalog-name {
+    @include font($font-size: 20, $line-height: 28, $weight: 400);
+    letter-spacing: 0.02em;
+    color: #2B2B2B;
   }
 
   &__input-help {
@@ -528,15 +803,38 @@ export default class Calc extends Vue {
   &__switch-slider {
   }
 
-  &__about {
+  &__about-selected {
+  }
+
+  &__about-selected-item {
+  }
+
+  &__about-section {
+  }
+
+  &__about-title {
   }
 
   &__about-description {
   }
-}
-.checkbox {
-}
-.custom-checkbox {
+
+  &__about-offer {
+  }
+
+  &__about-list {
+  }
+
+  &__about-list-item {
+  }
+
+  &__list-num {
+  }
+
+  &__list-text {
+  }
+
+  &__item-icon {
+  }
 }
 
 </style>
