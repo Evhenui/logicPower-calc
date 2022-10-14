@@ -113,8 +113,8 @@
               
               <section class="calc__source-power-inputs-enter">
 
-                <div class="calc__data-input-section">
-                  <h3 class="calc__subtitle">Суммарная мощность приборов, подключаемые к ИБП:</h3>
+                <div>
+                  <h3 class="calc__subtitle source-power">Суммарная мощность приборов, подключаемые к ИБП:</h3>
                   <div class="calc__data-input-wrapper">
                     <input class="calc__data-input" type="number" name="" id="w">
                     <span class="calc__data-input-units">W</span>
@@ -124,8 +124,8 @@
                   </div>
                 </div>
 
-                <div class="calc__data-input-section">
-                  <h3 class="calc__subtitle">	Необходимая мощность ИБП:</h3>
+                <div>
+                  <h3 class="calc__subtitle source-power">	Необходимая мощность ИБП:</h3>
                   <div class="calc__data-input-general-wrapper">
 
                     <div class="calc__data-input-wrapper">
@@ -181,18 +181,25 @@
 
           <section class="calc__source-power-body">
 
-            <form action="">
+            <form class="calc__form" action="">
 
               <section class="calc__inputs-wrapper">
-
-                <div class="calc__data-input-section">
+                <section class="calc__inputs-enter">
+                  <div class="calc__data-input-section">
                   <div class="calc__input-help">
                     <h3 class="calc__subtitle">Мощность ИБП:</h3>
                     <div class="calc__checkbox-help">
                       <img src="../assets/icons/help-link.png" alt="help" width="16" height="16">
-                      <div class="calc__help-section">
-                        <p class="calc__help-description">Отлично справляются с обеспечением резервного питания систем видеонаблюдения, котлов отопления и другой техники</p>
+                       <div class="calc__help-section">
+                      <div class="calc__help-section-arrow">
+                        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M-4.37114e-07 9L15 0.339744L15 17.6603L-4.37114e-07 9Z" fill="#F3F3F3"/>
+                        </svg>
                       </div>
+                      <div class="calc__help-section-wrapper">
+                        <p class="calc__help-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>    
+                      </div>                     
+                    </div>
                     </div>
                   </div>
                   
@@ -206,16 +213,23 @@
                 </div>
                 
                 <div class="calc__data-input-section">
-                  <div class="calc__input-help">
+                  <div class="calc__input-help switch">
                     <h3 class="calc__subtitle">	КПД инвертора:</h3>
                     <div class="calc__checkbox-help">
                       <img src="../assets/icons/help-link.png" alt="help" width="16" height="16">
                       <div class="calc__help-section">
-                        <p class="calc__help-description">Отлично справляются с обеспечением резервного питания систем видеонаблюдения, котлов отопления и другой техники</p>
+                      <div class="calc__help-section-arrow">
+                        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M-4.37114e-07 9L15 0.339744L15 17.6603L-4.37114e-07 9Z" fill="#F3F3F3"/>
+                        </svg>
                       </div>
+                      <div class="calc__help-section-wrapper">
+                        <p class="calc__help-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>    
+                      </div>                     
                     </div>
-                    <div class="calc__switch-wrapper">
-                      <label class="calc__switch">
+                    </div>
+                    <div class="calc__switch-section">
+                      <label class="calc__switch-wrapper">
                         <input class="calc__switch-input" type="checkbox">
                         <span class="calc__switch-slider"></span>
                       </label>
@@ -245,8 +259,11 @@
                   </div>
                 </div>
 
-                <div class="calc__data-input-section">
-                  <h3 class="calc__subtitle">Номинальное напряжение АКБ:</h3>              
+               <div class="calc__data-input-section">
+                  <div class="calc__input-help">
+                    <h3 class="calc__subtitle">Номинальное напряжение АКБ:</h3>
+                  </div>
+                  
                   <div class="calc__data-input-wrapper">
                     <input class="calc__data-input" type="number" name="" id="v">
                     <span class="calc__data-input-units">V</span>
@@ -255,13 +272,14 @@
                       </div>
                   </div>
                 </div>
+                </section>
 
                 <button class="calc__button-orange">Рассчитать</button>
 
               </section>                  
 
               <div class="calc__data-input-section">
-                <h3 class="calc__subtitle">Минимальная ёмкость АКБ:</h3>              
+                <h3 class="calc__subtitle source-power">Минимальная ёмкость АКБ:</h3>              
                 <div class="calc__data-input-wrapper">
                   <input class="calc__data-input" type="number" name="" id="ah">
                   <span class="calc__data-input-units">Ah</span>
@@ -274,7 +292,7 @@
             </form>  
             
             <section class="calc__recommended">
-              <h3 class="calc__subtitle">Рекомендуемые АКБ:</h3>
+              <h3 class="calc__subtitle orande-title">Рекомендуемые ИБП:</h3>
               <section class="calc__recommended-items">
 
               </section>
@@ -295,23 +313,30 @@
         <section class="calc__source-power">
 
           <section class="calc__source-header">
-            <h3 class="calc__source-power-header-title">Расчет времени автономной работы ИБП</h3>
+            <h3 class="calc__source-power-header-title">Расчет емкости аккумуляторной батареи для источника бесперебойного питания</h3>
           </section>
 
           <section class="calc__source-power-body">
 
-            <form action="">
+            <form class="calc__form" action="">
 
               <section class="calc__inputs-wrapper">
-
-                <div class="calc__data-input-section">
+                <section class="calc__inputs-enter">
+                  <div class="calc__data-input-section">
                   <div class="calc__input-help">
                     <h3 class="calc__subtitle">Нагрузка, W:</h3>
                     <div class="calc__checkbox-help">
                       <img src="../assets/icons/help-link.png" alt="help" width="16" height="16">
-                      <div class="calc__help-section">
-                        <p class="calc__help-description">Отлично справляются с обеспечением резервного питания систем видеонаблюдения, котлов отопления и другой техники</p>
+                       <div class="calc__help-section">
+                      <div class="calc__help-section-arrow">
+                        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M-4.37114e-07 9L15 0.339744L15 17.6603L-4.37114e-07 9Z" fill="#F3F3F3"/>
+                        </svg>
                       </div>
+                      <div class="calc__help-section-wrapper">
+                        <p class="calc__help-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>    
+                      </div>                     
+                    </div>
                     </div>
                   </div>
                   
@@ -325,16 +350,23 @@
                 </div>
                 
                 <div class="calc__data-input-section">
-                  <div class="calc__input-help">
+                  <div class="calc__input-help switch">
                     <h3 class="calc__subtitle">КПД инвертора:</h3>
                     <div class="calc__checkbox-help">
                       <img src="../assets/icons/help-link.png" alt="help" width="16" height="16">
                       <div class="calc__help-section">
-                        <p class="calc__help-description">Отлично справляются с обеспечением резервного питания систем видеонаблюдения, котлов отопления и другой техники</p>
+                      <div class="calc__help-section-arrow">
+                        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M-4.37114e-07 9L15 0.339744L15 17.6603L-4.37114e-07 9Z" fill="#F3F3F3"/>
+                        </svg>
                       </div>
+                      <div class="calc__help-section-wrapper">
+                        <p class="calc__help-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>    
+                      </div>                     
                     </div>
-                    <div class="calc__switch-wrapper">
-                      <label class="calc__switch">
+                    </div>
+                    <div class="calc__switch-section">
+                      <label class="calc__switch-wrapper">
                         <input class="calc__switch-input" type="checkbox">
                         <span class="calc__switch-slider"></span>
                       </label>
@@ -342,8 +374,8 @@
                   </div>
                   
                   <div class="calc__data-input-wrapper">
-                    <input class="calc__data-input" type="number" name="" id="w">
-                    <span class="calc__data-input-units">W</span>
+                    <input class="calc__data-input" type="number" name="" id="persent">
+                    <span class="calc__data-input-units">%</span>
                       <div class="calc__input-error">
                         <span class="calc__error">Ошибка: данные некорректны</span>
                       </div>
@@ -364,23 +396,27 @@
                   </div>
                 </div>
 
-                <div class="calc__data-input-section">
-                  <h3 class="calc__subtitle">Ёмкость АКБ:</h3>              
+               <div class="calc__data-input-section">
+                  <div class="calc__input-help">
+                    <h3 class="calc__subtitle">Ёмкость АКБ:</h3>
+                  </div>
+                  
                   <div class="calc__data-input-wrapper">
                     <input class="calc__data-input" type="number" name="" id="ah">
-                    <span class="calc__data-input-units">ah</span>
+                    <span class="calc__data-input-units">Ah</span>
                       <div class="calc__input-error">
                         <span class="calc__error">Ошибка: данные некорректны</span>
                       </div>
                   </div>
                 </div>
+                </section>
 
                 <button class="calc__button-orange">Рассчитать</button>
 
               </section>                  
 
               <div class="calc__data-input-section">
-                <h3 class="calc__subtitle">Время работы ИБП:</h3>              
+                <h3 class="calc__subtitle source-power">Время работы ИБП:</h3>              
                 <div class="calc__data-input-wrapper">
                   <input class="calc__data-input" type="number" name="" id="time">
                   <span class="calc__data-input-units">часов</span>
@@ -393,7 +429,7 @@
             </form>  
             
             <section class="calc__recommended">
-              <h3 class="calc__subtitle">Рекомендуемые АКБ:</h3>
+              <h3 class="calc__subtitle orande-title">Рекомендуемые ИБП:</h3>
               <section class="calc__recommended-items">
 
               </section>
@@ -498,7 +534,7 @@ export default class Calc extends Vue {
     background: var(--color-blue-white);
     box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
-    margin-bottom: 64px;
+    margin-bottom: 16px;
   }
 
   &__main-description {
@@ -511,9 +547,13 @@ export default class Calc extends Vue {
   }
 
   &__inputs-wrapper {
+    @include flex-container($direction: column, $spacing: flex-start, $alignment: null);
+    row-gap: 56px;
+    margin-bottom: 56px;
   }
 
   &__source-power {
+    padding-top: 48px;
   }
 
   &__source-header {
@@ -529,6 +569,7 @@ export default class Calc extends Vue {
 
   &__source-form {
     @include flex-container($direction: row, $spacing: space-between, $alignment: null);
+    margin-bottom: 56px;
   }
 
   &__checkbox {
@@ -643,17 +684,21 @@ export default class Calc extends Vue {
   }
 
   &__data-input-section {
+    max-width: 327px;
+    width: 100%;
   }
 
   &__subtitle {
     @include font($font-size: 20, $line-height: 28, $weight: 400);
     color: #2B2B2B;
-    margin-bottom: 24px;
     &.orande-title {
       @include font($font-size: 20, $line-height: 30, $weight: 600);
       text-transform: uppercase;
       color: #F36C21;
       margin-bottom: 48px;
+    }
+    &.source-power {
+      margin-bottom: 24px;
     }
   }
 
@@ -720,7 +765,7 @@ export default class Calc extends Vue {
     right: 0;
     @include flex-container($direction: row, $spacing: center, $alignment: center);
     width: 87px;
-    height: 48px;
+    height: 100%;
     background: #F3F3F3;
     border: 1px solid #BDBDBD;
     border-radius: 8px;
@@ -789,10 +834,73 @@ export default class Calc extends Vue {
   }
 
   &__input-help {
+     @include flex-container($direction: row, $spacing: null, $alignment: center);
+     column-gap: 16px;
+     margin-bottom: 24px;
+     &.switch {
+      margin-bottom: 22px;
+     }
+  }
+
+  &__inputs-enter {
+     @include flex-container($direction: row, $spacing: null, $alignment: baseline);
+     gap: 24px;
+     flex-wrap: wrap;
+     max-width: 1380px;
+     width: 100%;
+  }
+
+  &__switch-section {
+    font-size: 0;
   }
 
   &__switch-wrapper {
-  }
+        position: relative;
+        display: inline-block;
+        width: 56px;
+        height: 32px;
+      }
+      
+      &__switch-wrapper &__switch-input {display:none;}
+      
+      &__switch-slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #E3E5E6;
+        border-radius: 32px;
+        transition: all .2s ease-in-out;
+        &::before {
+            position: absolute;
+            content: "";
+            height: 28px;
+            width: 28px;
+            left: 2px;
+            bottom: 2px;
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            transition: all .2s ease-in-out;
+        }
+      }
+      
+      &__switch-input:checked + &__switch-slider{
+        background: #F36C21;
+      }
+
+      &__switch-input:checked + &__switch-slider:active{
+        background: #E05507;
+      }
+
+      &__switch-input + &__switch-slider:active{
+        background: #E05507;
+      }
+      
+      &__switch-input:checked + &__switch-slider:before {
+        transform: translateX(24px);
+      }
 
   &__switch {
   }
